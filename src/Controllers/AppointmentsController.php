@@ -26,7 +26,12 @@ class AppointmentController
             $this->edit($_GET['id']);
             return;
 
+        }
 
+        if(isset($_GET['action']) == 'create'){
+            $this->create();
+            return;
+            
         }
 
         $this->index();
