@@ -37,10 +37,10 @@ SET time_zone = "+00:00";
 CREATE TABLE
     `quintomilenio` (
         `id` int(11) NOT NULL,
-        `Nombre y Apellidos` varchar(255) NOT NULL,
-        `Telefono` varchar(9) NOT NULL,
-        `Email` varchar(255) NOT NULL,
-        `Consulta` text NOT NULL
+        `Name_Surnames` varchar(255) NOT NULL,
+        `phone_number` varchar(9) NOT NULL,
+        `email` varchar(255) NOT NULL,
+        `query` text NOT NULL
     ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
 
 --
