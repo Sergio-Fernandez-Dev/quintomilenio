@@ -1,3 +1,19 @@
+-- phpMyAdmin SQL Dump
+
+-- version 5.2.0
+
+-- https://www.phpmyadmin.net/
+
+--
+
+-- Servidor: 127.0.0.1
+
+-- Tiempo de generación: 18-07-2022 a las 12:02:56
+
+-- Versión del servidor: 10.4.24-MariaDB
+
+-- Versión de PHP: 8.1.6
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 
 START TRANSACTION;
@@ -37,10 +53,11 @@ SET time_zone = "+00:00";
 CREATE TABLE
     `quintomilenio` (
         `id` int(11) NOT NULL,
-        `Name_Surnames` varchar(255) NOT NULL,
-        `phone_number` varchar(9) NOT NULL,
-        `email` varchar(255) NOT NULL,
-        `query` text NOT NULL
+        `name` varchar(40) NOT NULL,
+        `phone` varchar(20) NOT NULL,
+        `email` varchar(40) NOT NULL,
+        `date_time` timestamp NOT NULL DEFAULT current_timestamp(),
+        `user_query` text NOT NULL
     ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
 
 --
