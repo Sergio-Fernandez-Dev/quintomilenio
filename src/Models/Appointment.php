@@ -4,7 +4,9 @@ namespace App\Models;
 
 use App\Tools\Database;
 
-class UsersMilenio{
+
+
+class Appointment{
     private ?int $id;
     private string $name;
     private string $phone;
@@ -29,46 +31,66 @@ class UsersMilenio{
 
     }
 
+        
+    public function allAppointment (){
+        $query = $this->database->getConnection()->query("SELECT * FROM {$this->table}");
+        $appointmentArray = $query->fetchAll();
+        $appointmentList = [];
+        foreach($appointmentArray as $appointment ){
+            $appointmentItem = new Appointment(
+                $appointment["id"],
+                $appointment["name"],
+                $appointment["phone"],
+                $appointment["email"],
+                $appointment["user_query"],
+                $appointment["date_time"]);
+                array_push($appointmentList, $appointmentItem);
+        }
+        return $appointmentList;
 
-    
-public function allUsers (){
-    $query = $this->database->getConnection()->query("SELECT * FROM {$this->table}");
-      $userArray = $query->fetchAll();
-      $userList = [];
-      foreach($userArray as $user ){
-        $userItem = new UsersMilenio(
-            $user["id"],
-            $user["name"],
-            $user["phone"],
-            $user["email"],
-            $user["user_query"],
-            $user["date_time"]);
-            array_push($userList, $userItem);
-      }
-      return $userList;
+    }
 
-}
+    public function getId(){
+        return $this->id;
+    }
+    public function getName(){
+        return $this->name;
+    }
+    public function getPhone(){
+        return $this->phone;
+    }
+    public function getEmail(){
+        return $this->email;
+    }
+    public function getUserQuery(){
+        return $this->user_query;
+    }
+    public function getDateTime(){
+        return $this->date_time;
+    }
 
-public function getId(){
-     return $this->id;
-}
-public function getName(){
-    return $this->name;
-}
-public function getPhone(){
-    return $this->phone;
-}
-public function getEmail(){
-    return $this->email;
-}
-public function getUserQuery(){
-    return $this->user_query;
-}
-public function getDateTime(){
-    return $this->date_time;
-}
+    public function findById($itemId){
+        $query = $this->database->getConnection()->query("SELECT * FROM {$this->table} WHERE id={$itemId}"); 
+        $result = $query->fetchAll();
+        return new Appointment (
+            $result[0]["id"],
+            $result[0]["name"],
+            $result[0]["phone"],
+            $result[0]["email"],
+            $result[0]["user_query"],
+            $result[0]["date_time"]);
+
+    }
 
 
+    public function destroy(){
+        $query = $this->database->getConnection()->query("DELETE FROM {$this->table} WHERE id= {$this->id}");
+    }
+
+
+    public function saveAppointment (){
+        $query = $this->database->getConnection()->query("INSERT INTO {$this->table}('name', 'phone', 'email', 'user_query')values($this->name, $this->phone, $this->email, $this->user_query)");
+    }
 }
 
 
