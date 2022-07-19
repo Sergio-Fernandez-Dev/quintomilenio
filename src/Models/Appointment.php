@@ -84,11 +84,12 @@ class Appointment{
 
 
     public function destroy(){
-        $query = $this->database->getConnection()->query("DELETE FROM {$this->table} WHERE id= {$this->id}");
+        $this->database->getConnection()->query("DELETE FROM {$this->table} WHERE id= {$this->id}");
     }
 
 
     public function saveAppointment (){
-        $query = $this->database->getConnection()->query("INSERT INTO {$this->table}('name', 'phone', 'email', 'user_query')values($this->name, $this->phone, $this->email, $this->user_query)");
+
+        $this->database->getConnection()->query("INSERT INTO {$this->table} (id, name, phone, email, date_time, user_query) values (Null,'$this->name', '$this->phone', '$this->email',current_timestamp(), '$this->user_query')");
     }
 }
