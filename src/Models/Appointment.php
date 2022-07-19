@@ -32,7 +32,7 @@ class Appointment{
     }
 
         
-    public function allAppointment (){
+    public function allAppointment(){
         $query = $this->database->getConnection()->query("SELECT * FROM {$this->table}");
         $appointmentArray = $query->fetchAll();
         $appointmentList = [];
@@ -92,18 +92,3 @@ class Appointment{
         $query = $this->database->getConnection()->query("INSERT INTO {$this->table}('name', 'phone', 'email', 'user_query')values($this->name, $this->phone, $this->email, $this->user_query)");
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>
-

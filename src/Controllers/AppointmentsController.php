@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controllers;
 
 use App\Models\Appointment;
-use App\Tools\View;
+use App\Core\View;
 
-class AppointmentController
+class AppointmentsController
 {
 
     public function __construct()
@@ -36,7 +36,7 @@ class AppointmentController
     public function index()
     {
         $model = new Appointment();
-        $appointments = $model->all();
+        $appointments = $model->allAppointment();
         new View('appointmentsList', ['appointments' => $appointments]);
     }
 
