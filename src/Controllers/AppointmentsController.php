@@ -10,22 +10,22 @@ class AppointmentsController
 
     public function __construct()
     {
-        if (isset($_GET['action']) == 'delete') {
+        if (isset($_GET['action']) && $_GET['action'] == 'delete') {
             $this->delete($_GET['id']);
             return;
         }
 
-        if (isset($_GET['action']) == 'store') {
+        if (isset($_GET['action']) && $_GET['action'] == 'store') {
             $this->store($_POST);
             return;
         }
 
-        if (isset($_GET['action']) == 'edit') {
+        if (isset($_GET['action']) && $_GET['action'] == 'edit') {
             $this->edit($_GET['id']);
             return;
         }
 
-        if (isset($_GET['action']) == 'create') {
+        if (isset($_GET['action']) && $_GET['action'] == 'create') {
             $this->create();
             return;
         }
