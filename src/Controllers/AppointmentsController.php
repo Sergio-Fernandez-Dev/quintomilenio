@@ -65,7 +65,7 @@ class AppointmentsController
         $model = new Appointment();
         $appointment = $model->findById($id);
 
-        new View("form", ["appointment" => $appointment, "action" => 'update']);
+        new View("form", ["appointments" => $appointment, "action" => 'update']);
     }
 
     public function delete(int $id)

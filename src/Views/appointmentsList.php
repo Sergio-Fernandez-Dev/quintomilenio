@@ -9,19 +9,49 @@
 <?php
     require_once("Components/header.php");
 ?>
+
+<a href="?action=create">
+    <button type="button" class="btn btn-primary">crear cita</button>
+</a>
+
+
  
-<main>
-<div class="card-header py-3">
-    <h1 class="font-weight-bold text-black titulo-pagina">Task appointment</h1>
-</div>
+<main class='container'>
+
 <?php
     foreach($data["appointments"] as $appointment){
-        echo ($appointment->getId());
-        echo ($appointment->getName());
-        echo ($appointment->getPhone());
-        echo ($appointment->getEmail());
-        echo ($appointment->getDateTime());
-        echo ($appointment->getUserQuery());
+        $id = $appointment->getId();
+        $name = $appointment->getName();
+        $phone = $appointment->getPhone();
+        $email = $appointment->getEmail();
+        $dateTime = $appointment->getDateTime();
+        $userQuery = $appointment->getUserQuery();
+        
+        echo  "
+            <div class='card mb-3' style='max-width: 18rem;'>
+                <div class='card-header'>
+                    <h3>$name</h3>
+                    <p class='card-data'>$email</p>
+                    <p class='card-data'>$phone</p>
+                    <a href='?action=edit&id=$id'>
+                         <button type='button' class='btn btn-primary'>m</button>
+                    </a>
+
+                    <a href='?action=delete&id=$id'>
+                        <button type='button' class='btn btn-primary'>D</button>
+                    </a>
+                </div> 
+                <div class='card-body '> 
+                    <p class='card-text'>$userQuery</p>
+
+                    <p class ='card-date'>$dateTime</p>
+
+                </div>
+            </div>  
+      
+        
+        ";
+       
 
     };
 ?>
