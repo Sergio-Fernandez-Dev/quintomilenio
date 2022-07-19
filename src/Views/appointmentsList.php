@@ -16,12 +16,12 @@
 </div>
 <?php
     foreach($data["appointments"] as $appointment){
-        echo ($appointment->getid());
-        echo ($appointment->getname());
-        echo ($appointment->getphone());
-        echo ($appointment->getemail());
-        echo ($appointment->getdate_time());
-        echo ($appointment->getuser_query());
+        echo ($appointment->getId());
+        echo ($appointment->getName());
+        echo ($appointment->getPhone());
+        echo ($appointment->getEmail());
+        echo ($appointment->getDateTime());
+        echo ($appointment->getUserQuery());
 
     };
 ?>
