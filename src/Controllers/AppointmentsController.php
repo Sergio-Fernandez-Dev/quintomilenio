@@ -42,7 +42,7 @@ class AppointmentsController
 
     public function create()
     {
-        new View('form');
+        new View('form', ["action" => 'store']);
     }
 
     public function store(array $request)
@@ -65,7 +65,7 @@ class AppointmentsController
         $model = new Appointment();
         $appointment = $model->findById($id);
 
-        new View("form", ["appointment" => $appointment]);
+        new View("form", ["appointment" => $appointment, "action" => 'update']);
     }
 
     public function delete(int $id)
