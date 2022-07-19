@@ -15,13 +15,13 @@
     <h1 class="font-weight-bold text-black titulo-pagina">Task appointment</h1>
 </div>
 <?php
-    foreach($data["appointments"] as $appointments){
-        echo ($appointments->getid());
-        echo ($appointments->getname());
-        echo ($appointments->getphone());
-        echo ($appointments->getemail());
-        echo ($appointments->getdate_time());
-        echo ($appointments->getuser_query());
+    foreach($data["appointments"] as $appointment){
+        echo ($appointment->getid());
+        echo ($appointment->getname());
+        echo ($appointment->getphone());
+        echo ($appointment->getemail());
+        echo ($appointment->getdate_time());
+        echo ($appointment->getuser_query());
 
     };
 ?>
