@@ -92,4 +92,9 @@ class Appointment{
 
         $this->database->getConnection()->query("INSERT INTO {$this->table} (id, name, phone, email, date_time, user_query) values (Null,'$this->name', '$this->phone', '$this->email',current_timestamp(), '$this->user_query')");
     }
+
+    public function updateAppointment (){
+
+        $this->database->getConnection()->query("UPDATE {$this->table} SET `name` = {$this->name}, `phone` = {$this->phone}, `email` = {$this->email}, `user_query` = {$this->user_query} WHERE  `id` = {$this->id};");
+    }
 }

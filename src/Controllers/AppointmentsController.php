@@ -30,6 +30,11 @@ class AppointmentsController
             return;
         }
 
+        if (isset($_GET['action']) && $_GET['action'] == 'update') {
+            $this->update($_POST, $_GET['id']);
+            return;
+        }
+
         $this->index();
     }
 
@@ -74,6 +79,19 @@ class AppointmentsController
         $appointment = $model->findById($id);
         $appointment->destroy();
 
+        $this->index();
+    }
+
+    public function update($request, $id) {   
+        $request = new Appointment(
+            $id,  
+            $request['name'], 
+            $request['phone'],
+            $request['email'], 
+            $request['user_query'],
+            null);
+
+        $request->updateAppointment();
         $this->index();
     }
 }
