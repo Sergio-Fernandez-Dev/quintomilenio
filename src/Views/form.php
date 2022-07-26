@@ -5,7 +5,7 @@
 use PhpParser\Node\Name;
 
     require_once("Components/layout.php");
-      
+      $id=null;
       $name = "";
       $phone = "";
       $email= "";
@@ -13,6 +13,7 @@ use PhpParser\Node\Name;
      if($data["action"]=="update"){
         
         $appointment = $data["appointments"];
+        $id = $appointment->getId();
         $name = $appointment->getName();
         $phone = $appointment->getPhone();
         $email = $appointment->getEmail();
@@ -30,7 +31,7 @@ use PhpParser\Node\Name;
 ?>
 
 <main>
-    <form method="post" action='?action=<?php echo $data['action'] ?>'>
+    <form method="post" action='?action=<?php echo $data['action'] ?>&id=<?php echo $id?>'>
         <label for="name">Nombre y apellidos  </label>
             <input type="text" name="name" value="<?php echo $name; ?>"  placeholder="Nombre del cliente" required >
        
