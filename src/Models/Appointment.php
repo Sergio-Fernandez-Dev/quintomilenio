@@ -28,7 +28,6 @@ class Appointment{
         if (!$this->database){
             $this->database = new Database();
         }
-
     }
 
         
@@ -47,7 +46,6 @@ class Appointment{
                 array_push($appointmentList, $appointmentItem);
         }
         return $appointmentList;
-
     }
 
     public function getId(){
@@ -79,7 +77,6 @@ class Appointment{
             $result[0]["email"],
             $result[0]["user_query"],
             $result[0]["date_time"]);
-
     }
 
 
@@ -89,12 +86,10 @@ class Appointment{
 
 
     public function saveAppointment (){
-
         $this->database->getConnection()->query("INSERT INTO {$this->table} (id, name, phone, email, date_time, user_query) values (Null,'$this->name', '$this->phone', '$this->email',current_timestamp(), '$this->user_query')");
     }
 
     public function updateAppointment (){
-
-        $this->database->getConnection()->query("UPDATE {$this->table} SET `name` = {$this->name}, `phone` = {$this->phone}, `email` = {$this->email}, `user_query` = {$this->user_query} WHERE  `id` = {$this->id};");
+        $this->database->getConnection()->query("UPDATE {$this->table} SET `name` = '{$this->name}', `phone` = '{$this->phone}', `email` = '{$this->email}', `user_query` = '{$this->user_query}' WHERE  `id` = {$this->id}");
     }
 }

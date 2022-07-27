@@ -6,3 +6,4 @@ use App\Controllers\AppointmentsController;
 
 $controller = new AppointmentsController();
 
+?>

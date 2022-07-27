@@ -10,7 +10,7 @@ class AppointmentsController
 
     public function __construct()
     {
-        var_dump ($_GET);
+        //var_dump ($_GET);
 
         //var_dump ($_POST);
         if (isset($_GET['action']) && $_GET['action'] == 'delete') {

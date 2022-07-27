@@ -22,8 +22,8 @@ class Database
     private function setConnection()
     {
         $host = "localhost";
-        $user = "root";
-        $pass = "";
+        $user = "consultorio";
+        $pass = "RPO*wJsJfxHsdU/.";
         $database = "consultorioquintomilenio";
         $charset = "utf-8";
         $options = [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC];
