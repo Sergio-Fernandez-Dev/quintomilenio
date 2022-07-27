@@ -38,7 +38,11 @@ require_once("components/layout.php");
     <script>
         const appointmenteId = document.addEventListener("click", (event) => {
             if (event.target.type === "button") {
-                document.getElementById("appointment").innerHTML = event.target.value;
+                const idForDelete = event.target.value
+                document.getElementById("appointment").innerHTML = 
+                `<a href="?action=delete&id=${idForDelete}">
+                <button type="button" class="btn btn-primary">Eliminar</button>
+                </a>`;
             }
         })
     </script>
