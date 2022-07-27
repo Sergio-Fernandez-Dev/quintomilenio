@@ -27,12 +27,21 @@ require_once("components/layout.php");
 
             require("components/card/card.php");
         };
+        require("components/modal/modal.html");
         ?>
     </main>
 
     <?php
     require_once("components/footer/footer.php");
     ?>
+    
+    <script>
+        const appointmenteId = document.addEventListener("click", (event) => {
+            if (event.target.type === "button") {
+                document.getElementById("appointment").innerHTML = event.target.value;
+            }
+        })
+    </script>
 </body>
 
 </html>
