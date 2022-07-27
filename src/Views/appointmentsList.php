@@ -1,33 +1,33 @@
 <html>
 
 <?php
-    require_once("Components/layout.php");
+require_once("components/layout.php");
 ?>
 
 <body>
 
-<?php
-    require_once("Components/header.php");
-?>
+    <?php
+    require_once("components/header/header.php");
+    ?>
 
-<a href="?action=create">
-    <button type="button" class="btn btn-primary">crear cita</button>
-</a>
+    <a href="?action=create">
+        <button type="button" class="btn btn-primary">crear cita</button>
+    </a>
 
 
- 
-<main class='container'>
 
-<?php
-    foreach($data["appointments"] as $appointment){
-        $id = $appointment->getId();
-        $name = $appointment->getName();
-        $phone = $appointment->getPhone();
-        $email = $appointment->getEmail();
-        $dateTime = $appointment->getDateTime();
-        $userQuery = $appointment->getUserQuery();
-        
-        echo  "
+    <main class='container'>
+
+        <?php
+        foreach ($data["appointments"] as $appointment) {
+            $id = $appointment->getId();
+            $name = $appointment->getName();
+            $phone = $appointment->getPhone();
+            $email = $appointment->getEmail();
+            $dateTime = $appointment->getDateTime();
+            $userQuery = $appointment->getUserQuery();
+
+            echo  "
             <div class='card mb-3' style='max-width: 18rem;'>
                 <div class='card-header'>
                     <h3>$name</h3>
@@ -51,13 +51,13 @@
       
         
         ";
-       
+        };
+        ?>
+    </main>
 
-    };
-?>
-</main>
-
-    <footer></footer>
+    <?php
+    require_once("components/footer/footer.php");
+    ?>
 </body>
 
 </html>

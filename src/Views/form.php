@@ -4,7 +4,7 @@
 
 use PhpParser\Node\Name;
 
-require_once("Components/layout.php");
+require_once("components/layout.php");
 $id = null;
 $name = "";
 $phone = "";
@@ -26,7 +26,7 @@ if ($data["action"] == "update") {
 <body>
 
     <?php
-    require_once("Components/header.php");
+    require_once("components/header/header.php");
     ?>
 
     <main>
@@ -52,5 +52,5 @@ if ($data["action"] == "update") {
 
 
     <?php
-    require_once("Components/footer.php");
+    require_once("components/footer/footer.php");
     ?>
