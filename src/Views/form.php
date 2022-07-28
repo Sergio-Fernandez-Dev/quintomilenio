@@ -31,7 +31,7 @@ if ($data["action"] == "update") {
 
     <main>
         <link rel="stylesheet" href="src/Views/form.css">
-        <div class='card mb-3' style='max-width: 80em;' style='max-height: 140em;'>
+        <div class='card mb-3' style='max-width: 80em;'>
             <div class='card-header'>
                 <p class='card-tittle'>Alta/Modificacion</p>
                 <div class='card-body '>

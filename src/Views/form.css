@@ -13,6 +13,7 @@ label{
     font-size: 20px;
     font-style: bold;
     color: black;
+    max-width: 100%;
     
 }
 
@@ -23,6 +24,7 @@ h1{
     font-size: 36px;
     font-family: monospace;
     background-color: #EFECFB; opacity: 100%;
+    max-width: 100%;
 
 }
 .card-tittle{
@@ -33,15 +35,32 @@ h1{
     font-size: 30px;
     font-family: monospace;
     background-color: #EFECFB; opacity: 100%;
+    max-width: 100%;
 
 }
 
 .card-mb-3{
-    border-radius: 50px;
+    border-radius: 1px;
     box-shadow: 0 10px 20px 0;
+    margin-top: 320px;
 
 
 }
+
+.card-body{
+    max-width: 260px;
+    max-width: 380px;
+   /* background-color: aqua; */
+
+
+}
+.card-dataa{
+
+    max-width: 100%;
+
+}
+
+
 .saveButton{
     display: grid;
     grid-row: end;
@@ -50,6 +69,7 @@ h1{
     margin-left: 200px;
     margin-top: -50px;
     
+    
 }
 .cancellButton{
     display: grid;
@@ -57,12 +77,20 @@ h1{
     width:80px;
     padding-top: -10px;
     margin-left: 80px;
+    
+    
 }
 
 input{
 
     font-family: monospace;
     background-color: rgb(251, 238, 255);
+    max-width: 100%;
 
 }
+
+textarea {
+    max-width: 100%;
+}
+
 
