@@ -1,6 +1,8 @@
 @import url(./components/header/header.css);
 @import url(./appointmentsList.css);
 @import url(./components/footer/footer.css);
+@import url(./components/card/card.css);
+
 
 :root {
   --primary-color: #532164;
