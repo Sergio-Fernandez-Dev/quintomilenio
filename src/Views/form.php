@@ -54,7 +54,7 @@ if ($data["action"] == "update") {
                     <input type="text" class="form-control" name="phone" value="<?php echo $phone; ?>" placeholder="Telefono del cliente" required>
 
                     <label for="issue">Consulta</label>
-                    <textarea name="user_query" class="form-control" rows="10" cols="50" required><?php echo $userQuery; ?> </textarea>
+                    <textarea name="user_query" class="form-control" maxlength="225" rows="10" cols="50" required><?php echo $userQuery; ?> </textarea>
 
 
                     <div class="buttons-container">
