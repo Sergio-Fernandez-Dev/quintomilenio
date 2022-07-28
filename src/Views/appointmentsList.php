@@ -39,7 +39,7 @@ require_once("components/header/header.php");
                 const idForDelete = event.target.value
                 document.getElementById("appointment").innerHTML = 
                 `<a href="?action=delete&id=${idForDelete}">
-                <button type="button" class="btn btn-primary">Eliminar</button>
+                <button type="button" class="main-button">Eliminar</button>
                 </a>`;
             }
         })

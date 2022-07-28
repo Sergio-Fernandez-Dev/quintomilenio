@@ -6,9 +6,10 @@
   --primary-color: #532164;
   --secondary-color: #D2CAF4;
   --primary-button-color: #AAD276;
-  --primary-button-hover: #C9E0AB;
+  --primary-button-hover: #74a139;
+  --primary-button-active: #C9E0AB;
   --secondary-button-color: #FF0000;
-  --secondary-button-hover: #FB6060;
+  --secondary-button-active: #FB6060;
   --background-card-color: #FFF;
   --background-color: #F3F3F2;
   --font-color: #1B0F1B;
@@ -17,6 +18,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
 }
 
 main {
@@ -29,3 +34,47 @@ a {
   text-decoration: none;
   background-color: var(--text-color);
 }
+
+.main-button {
+  width: 150px;
+  height: 35px;
+  background: var(--primary-button-color);
+  border: 1px solid var(--primary-button-color);
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--background-card-color);
+}
+
+.secondary-button {
+  width: 150px;
+  height: 35px;
+  background:var(--background-card-color);
+  border: 1px solid var(--secondary-button-color);
+  border-radius: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--secondary-button-color);
+  font-family: 'Inter';
+}
+
+.secondary-button:hover {
+  background: var(--secondary-button-color);
+  color: var(--background-card-color)
+} 
+ .secondary-button:active {
+  background: var(--secondary-button-active);
+ }  
+
+.main-button:hover {
+  background: var(--primary-button-hover);
+  color: var(--background-card-color)
+} 
+ .main-button:active {
+  background: var(--primary-button-active);
+ }  
