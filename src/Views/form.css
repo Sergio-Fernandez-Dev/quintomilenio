@@ -1,0 +1,59 @@
+/*Style of the different layers*/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+label{
+    display: flex;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    font-style: bold;
+    color: black;
+    
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-family: monospace;
+    background-color: #EFECFB; opacity: 100%;
+
+}
+.card-tittle{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: monospace;
+    background-color: #EFECFB; opacity: 100%;
+
+}
+
+.card-mb-3{
+    border-radius: 50px;
+    box-shadow: 0 10px 20px 0;
+
+
+}
+.buttonSave{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+input{
+
+    font-family: monospace;
+    background-color: rgb(251, 238, 255);
+
+}
+
