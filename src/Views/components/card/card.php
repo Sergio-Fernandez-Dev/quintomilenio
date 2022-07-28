@@ -10,13 +10,13 @@
         <div class='card-header-buttons'>
             <a href=<?php echo '?action=edit&id=' . $id ?>>
                 <button type='button'><span class="material-symbols-outlined">
-edit_square
-</span></button>
+                        edit_square
+                    </span></button>
             </a>
 
-            <button type="button" value="<?php echo $id ?>" ><span class="material-symbols-outlined">
-delete
-</span></button>
+            <button type="button" value="<?php echo $id ?>" data-bs-toggle="modal" data-bs-target="#appointmentModal" class="material-symbols-outlined">
+                delete
+            </button>
 
         </div>
     </div>

@@ -35,12 +35,14 @@ require_once("components/header/header.php");
     
     <script>
         const appointmenteId = document.addEventListener("click", (event) => {
+            console.log(event.target);
             if (event.target.type === "button") {
                 const idForDelete = event.target.value
                 document.getElementById("appointment").innerHTML = 
                 `<a href="?action=delete&id=${idForDelete}">
                 <button type="button" class="main-button">Eliminar</button>
                 </a>`;
+                
             }
         })
     </script>
