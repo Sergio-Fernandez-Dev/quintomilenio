@@ -23,6 +23,13 @@
   display: none;
 }
 
+.btn-float:hover {
+  background: var(--primary-button-hover);
+}
+.btn-float:active {
+  background: var(--primary-button-active);
+ } 
+
 @media (min-width: 552px) {
   .btn-expanded {
     width: 222px;
@@ -34,11 +41,6 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 25px;
-  
-
-  }
-
-  .btn-expanded-text {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -46,6 +48,13 @@
     line-height: 25px;
     color: #FFF;
   }
+
+  .btn-expanded:hover {
+    background: var(--primary-button-hover);
+  }
+  .btn-expanded:active {
+    background: var(--primary-button-active);
+   } 
 
   .btn-float {
     display: none;
