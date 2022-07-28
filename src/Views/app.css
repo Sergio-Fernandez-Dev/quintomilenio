@@ -1,9 +1,6 @@
-@import url(./components/layout.php);
 @import url(./components/header/header.css);
 @import url(./appointmentsList.css);
-@import url(./components/card/card.php);
 @import url(./components/footer/footer.css);
-@import url(./components/modal/modal.css);
 
 :root {
   --primary-color: #532164;
