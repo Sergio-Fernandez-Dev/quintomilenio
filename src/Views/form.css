@@ -1,0 +1,92 @@
+/*Style of the different layers*/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+label{
+    display: flex;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    font-style: bold;
+    
+    max-width: 100%;
+    
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-family: monospace;
+    background-color: #EFECFB; opacity: 100%;
+    max-width: 100%;
+
+}
+.card-tittle{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: monospace;
+    background-color: #EFECFB; opacity: 100%;
+    max-width: 100%;
+
+}
+
+.card{
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    
+
+}
+
+.card-body{
+   /* background-color: aqua; */
+   padding: 0 3rem;
+   
+}
+.form-edit{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-data{
+
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.buttons-container{
+ display: flex;
+ justify-content: center;
+ 
+
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+
+}
+
+.card-header{
+    background-color: #EFECFB;
+
+}
+
+textarea {
+    max-width: 100%;
+}
+
+
