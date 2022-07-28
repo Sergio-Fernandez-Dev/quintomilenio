@@ -1,5 +1,4 @@
 <div class='card mb-3'>
-
     <div class='card-header-custom'>
         <div class='card-header-data'>
             <p class="card-user-name"><?php echo $name ?></p>
@@ -14,7 +13,7 @@
                     </span></button>
             </a>
 
-            <button type="button" value="<?php echo $id ?>" data-bs-toggle="modal" data-bs-target="#appointmentModal" class="material-symbols-outlined">
+            <button type="button" value="<?php echo $id ?>" data-bs-toggle="modal" data-bs-target="#appointmentModal" class="material-symbols-outlined" id="delete-button">
                 delete
             </button>
 
