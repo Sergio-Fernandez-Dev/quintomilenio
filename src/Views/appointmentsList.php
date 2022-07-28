@@ -3,8 +3,13 @@ require_once("components/header/header.php");
 ?>
 
 <main>
-    <a href="?action=create">
-        <button type="button" class="btn-float ">+</button>
+    <a id="f" href="?action=create">
+        <button type="button" class="btn-float">
+            <span class="material-symbols-outlined">add</span>
+        </button>
+        <button type="button" class="btn-expanded">
+            <span class="btn-expanded-text">CREAR CITA</span>
+        </button>
     </a>
 
     <div class="card-list">
