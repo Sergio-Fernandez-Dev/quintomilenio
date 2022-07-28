@@ -1,10 +1,4 @@
 vendor/
-<<<<<<< HEAD
 .idea
 .vscode
 .DS_Store
-=======
-src/Tools/*
-.vscode/
-.idea/
->>>>>>> QN-46
