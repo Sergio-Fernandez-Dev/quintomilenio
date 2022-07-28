@@ -4,7 +4,7 @@ El Consultorio Quinto Milenio es un proyecto diseñado por el equipo The Crazy H
 
 ## Descripción
 
-La aplicación es una app interna para un consultorio paranormal. Esta app solamente será utilizada por el personal interno del consultorio y por lo tanto carece de sistema de logion y/o autenticación.
+La aplicación es una app interna para un consultorio paranormal. Esta app solamente será utilizada por el personal interno del consultorio y por lo tanto carece de sistema de login y/o autenticación.
 
 ## Stack
 
