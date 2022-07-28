@@ -60,7 +60,7 @@ if ($data["action"] == "update") {
                     <div class="buttons-container">
                         <div class='buttons'>
                             <a href="/quintomilenio">
-                                <button type="reset" class="secondary-button">Cancelar</button>
+                                <button type="button" class="btn secondary-button">Cancelar</button>
                             </a>
                             <button type="submit" class="main-button">Guardar</button>
                         </div>
