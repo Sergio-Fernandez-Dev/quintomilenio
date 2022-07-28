@@ -7,9 +7,7 @@
             <button type='button' class='btn btn-light-primary' >🖊️</button>
         </a>
 
-        <a href=<?php echo '?action=delete&id=' . $id ?>>
-            <button type='button' class='btn btn-light-danger'>🗑️</button>
-        </a>
+        <button type="button" value="<?php echo $id ?>" class="btn btn-light-danger deleteButton" data-bs-toggle="modal" data-bs-target="#appointmentModal">🗑️</button>
     </div>
     <div class='card-body '>
         <p class='card-text'><?php echo $userQuery ?></p>

@@ -27,12 +27,25 @@ require_once("components/layout.php");
 
             require("components/card/card.php");
         };
+        require("components/modal/modal.html");
         ?>
     </main>
 
     <?php
     require_once("components/footer/footer.php");
     ?>
+    
+    <script>
+        const appointmenteId = document.addEventListener("click", (event) => {
+            if (event.target.type === "button") {
+                const idForDelete = event.target.value
+                document.getElementById("appointment").innerHTML = 
+                `<a href="?action=delete&id=${idForDelete}">
+                <button type="button" class="btn btn-primary">Eliminar</button>
+                </a>`;
+            }
+        })
+    </script>
 </body>
 
 </html>
