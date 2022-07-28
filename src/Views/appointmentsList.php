@@ -4,7 +4,7 @@ require_once("components/header/header.php");
 
 <main>
     <a href="?action=create">
-        <button type="button" class="btn btn-primary  btn-float">CREAR CITA</button>
+        <button type="button" class="btn-float ">+</button>
     </a>
 
     <div class="card-list">

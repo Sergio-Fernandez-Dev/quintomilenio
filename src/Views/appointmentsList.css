@@ -4,3 +4,8 @@
   grid-auto-rows: 25rem;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 }
+
+btn-float { 
+  background-color: ;
+  border-radius: 100%;
+}

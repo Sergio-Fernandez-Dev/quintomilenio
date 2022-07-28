@@ -4,6 +4,18 @@
 @import url(./components/card/card.php);
 @import url(./components/footer/footer.css);
 
+:root {
+  --primary-color: #532164;
+  --secondary-color: #D2CAF4;
+  --primary-button-color: #AAD276;
+  --primary-button-hover: #C9E0AB;
+  --secondary-button-color: #FF0000;
+  --secondary-button-hover: #FB6060;
+  --background-card-color: #FFF;
+  --background-color: #F3F3F2;
+  --font-color: #1B0F1B;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,4 +29,5 @@ main {
 
 a {
   text-decoration: none;
+  background-color: var(--text-color);
 }
