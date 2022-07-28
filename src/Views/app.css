@@ -78,3 +78,14 @@ a {
  .main-button:active {
   background: var(--primary-button-active);
  }  
+
+
+
+
+
+.footer-text{
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  
+}
