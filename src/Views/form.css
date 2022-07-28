@@ -42,12 +42,21 @@ h1{
 
 
 }
-.buttonSave{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.saveButton{
+    display: grid;
+    grid-row: end;
+    width:20px; 
+    padding-top: 10px;
+    margin-left: 200px;
+    margin-top: -50px;
     
-
+}
+.cancellButton{
+    display: grid;
+    grid-row: start;
+    width:80px;
+    padding-top: -10px;
+    margin-left: 80px;
 }
 
 input{
