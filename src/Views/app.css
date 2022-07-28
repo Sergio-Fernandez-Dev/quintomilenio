@@ -1,5 +1,34 @@
 @import url(./components/layout.php);
-@import url(./components/footer/header.css);
+@import url(./components/header/header.css);
+@import url(./appointmentsList.css);
+@import url(./components/card/card.php);
 @import url(./components/footer/footer.css);
 @import url(./components/modal/modal.css);
 
+:root {
+  --primary-color: #532164;
+  --secondary-color: #D2CAF4;
+  --primary-button-color: #AAD276;
+  --primary-button-hover: #C9E0AB;
+  --secondary-button-color: #FF0000;
+  --secondary-button-hover: #FB6060;
+  --background-card-color: #FFF;
+  --background-color: #F3F3F2;
+  --font-color: #1B0F1B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  background-color: var(--text-color);
+}

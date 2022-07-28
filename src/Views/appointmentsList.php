@@ -1,21 +1,13 @@
-<html>
-
 <?php
-require_once("components/layout.php");
+require_once("components/header/header.php");
 ?>
 
-<body>
-
-    <?php
-    require_once("components/header/header.php");
-    ?>
-
+<main>
     <a href="?action=create">
-        <button type="button" class="btn btn-primary">crear cita</button>
+        <button type="button" class="btn-float ">+</button>
     </a>
 
-    <main class='container'>
-
+    <div class="card-list">
         <?php
         foreach ($data["appointments"] as $appointment) {
             $id = $appointment->getId();
@@ -29,7 +21,8 @@ require_once("components/layout.php");
         };
         require("components/modal/modal.html");
         ?>
-    </main>
+    </div>
+</main>
 
     <?php
     require_once("components/footer/footer.php");
