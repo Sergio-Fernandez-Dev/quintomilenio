@@ -32,9 +32,9 @@ if ($data["action"] == "update") {
     <main>
         <link rel="stylesheet" href="src/Views/form.css">
         <div class='card mb-3' style='max-width: 80em;'>
-            <div class='card-header'>
+            <div class='card-header-form'>
 
-                <p class='card-tittle'>Alta/Modificacion</p>
+                <h1>Alta/Modificacion</h1>
 
             </div>
             <div class='card-body '>

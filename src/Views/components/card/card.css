@@ -29,9 +29,12 @@
 
 .card-body {
     padding: 1rem 2rem;
+    overflow: hidden;
+    text-align: justify;
 }
 .card-text {
     font-size: 1.2em;
+  
     /* line-height: 15px; */
 }
 .card-date{
